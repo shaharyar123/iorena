@@ -17,11 +17,11 @@ jQuery(document).ready(function ($) {
     // centerMode: true,
   });
 
-  // $('a[data-slide]').click(function (e) {
-  //   e.preventDefault();
-  //   var slideno = $(this).data('slide');
-  //   $('.slider-nav').slick('slickGoTo', slideno - 1);
-  // });
+  $('a[data-slide]').click(function (e) {
+    e.preventDefault();
+    var slideno = $(this).data('slide');
+    $('.slider-nav').slick('slickGoTo', slideno - 1);
+  });
 
   $("#room").on('click', function () {
     $('.main-slider-carousel-wrapper').toggleClass("slider-slide-up");
